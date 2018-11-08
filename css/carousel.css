@@ -1,0 +1,92 @@
+/* Home Slider 
+================================= */
+.carousel-home img {
+  width: 100%;
+}
+.carousel-home .carousel-control {
+  background: black;
+  height: 80px;
+  width: 40px;
+  top: 50%;
+  margin-top: -40px;
+  -moz-transition: width, 0.3s;
+  -o-transition: width, 0.3s;
+  -webkit-transition: width, 0.3s;
+  transition: width, 0.3s;
+}
+.carousel-home .carousel-control .fa {
+  font-size: 2.5em;
+  padding-top: 12px;
+}
+.carousel-home .carousel-control:hover {
+  width: 50px;
+}
+.carousel-home .carousel-caption {
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+.carousel-home .carousel-title {
+  color: #fff;
+  font-family: "Dosis", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.carousel-home .carousel-subtitle {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.carousel-home .btn {
+  margin-top: 30px;
+}
+
+/*============*/
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* -------------------------------------
+  Media queries
+   ------------------------------------- */
+
+   /* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media(max-width:1080px) 
+{
+.carousel-home .carousel-title{font-size: 40px;}
+.carousel-home .carousel-subtitle{font-size: 20px;}
+}
+
+@media(max-width:860px) 
+{
+.carousel-home .carousel-title{font-size: 30px;}
+.carousel-home .carousel-subtitle{font-size: 14px;}
+.carousel-home .carousel-caption{top: 35%;}
+}
+@media(max-width:563px) 
+{
+.carousel-home .carousel-title{font-size: 20px;}
+.carousel-home .carousel-subtitle{font-size: 12px;}
+.carousel-home .carousel-caption{top: 25%;}
+}
+@media(max-width:425px) 
+{
+h2{margin-top: 10px;margin-bottom: 5px;}
+h4{margin-top: 5px;margin-bottom: 5px;}
+.carousel-home .carousel-title{font-size: 16px;}
+.carousel-home .carousel-subtitle{font-size: 11px;}
+.carousel-home .carousel-caption{top: 18%;} 
+}
+@media(max-width:325px) 
+{
+h2{margin-top: 10px;margin-bottom: 5px;}
+h4{margin-top: 5px;margin-bottom: 5px;}
+.carousel-home .carousel-title{font-size: 13px;}
+.carousel-home .carousel-subtitle{font-size: 10px;}
+.carousel-home .carousel-caption{top: 10%;} 
+}
